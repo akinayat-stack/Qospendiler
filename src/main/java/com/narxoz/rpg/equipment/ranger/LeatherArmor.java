@@ -3,7 +3,7 @@ package com.narxoz.rpg.equipment.ranger;
 import com.narxoz.rpg.equipment.Armor;
 
 public class LeatherArmor implements Armor {
-    private final String name = "Тері сауыт";
+    private final String name = "Leather Armor";
     private final int defense = 20;
     private final int agilityBonus = 10;
 
@@ -17,6 +17,6 @@ public class LeatherArmor implements Armor {
 
     @Override
     public String getInfo() {
-        return name + " (Defense: " + defense + ", Agility +" + agilityBonus + ")";
+        return name + " (Defense: " + defense + ", Agility           +" + agilityBonus + ")";
     }
 }
