@@ -5,7 +5,7 @@ public class Quday extends BaseCharacter {
     private final int strength = 100;
     private final int intelligence = 100;
     public Quday(String name) {
-        this.name = name;
+        super(name);
     }
     @Override
     public String getStats() {

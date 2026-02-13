@@ -5,7 +5,7 @@ public class Hanshaim extends BaseCharacter {
     private final int strength = 20;
     private final int intelligence = 40;
     public Hanshaim(String name) {
-        this.name = name;
+        super(name);
     }
     @Override
     public String getStats() {

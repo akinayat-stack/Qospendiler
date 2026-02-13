@@ -5,7 +5,7 @@ public class Aksakal extends BaseCharacter {
     private final int strength = 10;
     private final int intelligence = 90;
     public Aksakal(String name) {
-        this.name = name;
+        super(name);
     }
     @Override
     public String getStats() {

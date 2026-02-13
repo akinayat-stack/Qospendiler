@@ -7,6 +7,9 @@ public abstract class BaseCharacter implements Character {
     protected Weapon weapon;
     protected Armor armor;
     protected Accessory accessory;
+        public BaseCharacter(String name) {
+            this.name = name;
+        }
     @Override
     public void equipWeapon(Weapon weapon) {
         this.weapon = weapon;
@@ -19,12 +22,16 @@ public abstract class BaseCharacter implements Character {
     public void equipAccessory(Accessory accessory) {
         this.accessory = accessory;
     }
+        @Override
+        public String getName() {
+            return name;
+        }
     @Override
     public void displayEquipment() {
-        System.out.println("  Экипировка " + name + ":");
-        if (weapon != null) System.out.println("    Оружие: " + weapon.getInfo());
-        if (armor != null) System.out.println("    Броня: " + armor.getInfo());
-        if (accessory != null) System.out.println("    Аксессуар: " + accessory.getInfo());
+        System.out.println("  Equipment " + name + ":");
+        if (weapon != null) System.out.println("    Weapon: " + weapon.getInfo());
+        if (armor != null) System.out.println("    Armor: " + armor.getInfo());
+        if (accessory != null) System.out.println("    Accessory: " + accessory.getInfo());
     }
     protected void checkFullSetBonus() {      
     }

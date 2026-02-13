@@ -5,7 +5,7 @@ public class Batyr extends BaseCharacter {
     private final int strength = 80;
     private final int intelligence = 20;
     public Batyr(String name) {
-        this.name = name;
+        super(name);
     }
     @Override
     public String getStats() {
