@@ -1,5 +1,6 @@
 package com.narxoz.rpg;
 
+import com.narxoz.rpg.character.Character;
 import com.narxoz.rpg.character.*;
 import com.narxoz.rpg.factory.character.*;
 import com.narxoz.rpg.factory.equipment.*;
@@ -112,8 +113,8 @@ public class Main {
         System.out.println("=========================================");
         System.out.println("           SYSTEM WORKS SUCCESSFULLY");
         System.out.println("=========================================");
-        System.out.println(" Factory Method: 5 characters (Batyr, Aksakal, Hanshaim, Quday, Rogue)");
-        System.out.println(" Abstract Factory: 4 themes (Medieval, Magic, Ranger, Undead)");
+        System.out.println(" Factory Method: 4 characters (Batyr, Aksakal, Hanshaim, Quday)");
+        System.out.println(" Abstract Factory: 3 themes (Medieval, Magic, Ranger)");
         System.out.println(" Mount System: mount equipment and full set bonus");
         System.out.println(" Open/Closed Principle maintained – easy to add new classes and sets");
     }
